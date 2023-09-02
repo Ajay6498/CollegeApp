@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Desktop</title>
+</head>
+<body>
+	<form>
+		<h1>
+			<p th:text=${msg2} />
+		</h1>
+		<div>
+			Your Data  
+		</div>
+          
+		 <table border="2" style="width: 300px">
+
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Stream</td>
+			<td>Batch</td>
+			<td>Password</td>
+
+
+		</tr>
+		<tr th:each="stud : ${stud}">
+
+			<td th:text="${stud.studId}"></td>
+			<td th:text="${stud.studName}"></td>
+			<td th:text="${stud.studEmail}"></td>
+			<td th:text="${stud.studStream}"></td>
+			<td th:text="${stud.studBatch}"></td>
+			<td th:text="${stud.studPassword}"></td>
+
+		</tr>
+
+	</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		 <br><br>
+		<div>
+			Return to Home page <a href="/wellcomecontorller/home">Click here</a>
+		</div>
+
+	</form>
+
+
+</body>
+</html>

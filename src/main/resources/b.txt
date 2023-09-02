@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Simple LogIn form</title>
+</head>
+
+<body>
+
+  <p th:text=${msg} />
+
+  <form th:action="@{checklogin}" method="post">
+
+    <h1>Log In </h1>
+
+    <table border="1">
+      <tr>
+        <td><label for="userName">User Name:</label></td>
+        <td><input type="text" id="studEmail" name="studEmail" required placeholder="eg.abc@gmail.com"> </td>
+      </tr>
+
+      <tr>
+        <td><label for="studPassword">Password:</label></td>
+        <td><input type="password" id="studPassword" name="studPassword" required placeholder="password"> </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Login"></td>
+      </tr>
+
+    </table>
+    <div>
+      Register <a href="/studentcontroller/register">Click here</a>
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>
