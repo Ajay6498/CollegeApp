@@ -10,4 +10,6 @@ public class CollegeAppApplication {
 		SpringApplication.run(CollegeAppApplication.class, args);
 	}
 //    Use this link to access this app ----http://localhost:8080/wellcomecontorller/wellcome
+	//PostMan
+	
 }
