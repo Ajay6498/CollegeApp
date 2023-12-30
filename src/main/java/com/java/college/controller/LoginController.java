@@ -25,7 +25,7 @@ public class LoginController {
 	public String studLogin(Model model) {
 		model.addAttribute("studlogin", new LogIn());
 		return "studlogin";
-		 
+
 	}
 
 //	@PostMapping("/checklogin")

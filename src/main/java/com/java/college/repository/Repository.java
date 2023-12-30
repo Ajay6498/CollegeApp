@@ -6,8 +6,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.java.college.entity.Student;
 
-@org.springframework.stereotype.Repository
-public interface Repository extends JpaRepository<Student, Integer> {
+ public interface Repository extends JpaRepository<Student, Integer> {
 	
 	
 	Student findByStudEmail(@Param("studEmail") String studEmail);
